@@ -29,11 +29,11 @@
 |-------------|-------|
 | SNS Topic | ![Alert](images/ThresholdAlarm.png) |
 | SNS Email | ![Alert](images/RecoveryEmail.png) |
-| Lambda Test | ![Alert](images/RecoveryEmail.png) |
+| Lambda Test | ![Alert](images/LambdaEmail.png) |
 | Lambda Email | ![Alert](images/RecoveryEmail.png) |
 
 ### **4. Code Snippets**
-#### **Lambda Code (Python)** (`scripts/LambdaPythonAlert.py`):
+#### **Lambda Pythong Code** (`scripts/LambdaPythonAlert.py`):
 ```bash
 import json
 import boto3
