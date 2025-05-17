@@ -4,7 +4,7 @@
 [![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com) 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://python.org)
 
-## 🧠 Objectives
+## 📌 Objectives
 ✅ Cost Visibility: Monitor AWS spend in real-time
 
 ✅ Automated Alerts: Trigger notifications at 80%/100% thresholds
