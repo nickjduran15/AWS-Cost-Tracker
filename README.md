@@ -14,7 +14,7 @@
 ## 🛠️ Technologies Used
 - **AWS Services**: AWS Budgets, Lambda, SNS, CloudWatch
 
-## 🛠️ Architecture
+## 🏗️ Architecture
 - AWS Budgets → Lambda → SNS → Email
 - ![Architecture](diagram/CostTracker_Diagram.png)
 
