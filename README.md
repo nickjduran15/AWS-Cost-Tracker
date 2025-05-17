@@ -12,7 +12,7 @@
 ✅ Cross-Service Integration: Connect Budgets → Lambda → SNS
 
 ## 🛠️ Technologies Used
-- **AWS Services**: AWS Budgets, Lambda, and SNS
+- **AWS Services**: AWS Budgets, Lambda, SNS, CloudWatch
 
 ## 🛠️ Architecture
 - AWS Budgets → Lambda → SNS → Email
@@ -27,10 +27,11 @@
 ## 📸 Visuals
 | Results | Image |
 |-------------|-------|
-| SNS Topic | ![Alert](images/ThresholdAlarm.png) |
-| SNS Email | ![Alert](images/RecoveryEmail.png) |
+| SNS Topic | ![Alert](images/Topic.png) |
+| SNS Email | ![Alert](images/AWSBudgetSNS.png) |
 | Lambda Test | ![Alert](images/LambdaEmail.png) |
-| Lambda Email | ![Alert](images/RecoveryEmail.png) |
+| Lambda Email | ![Alert](images/AWSBudgetLambda.png) |
+| Output Logs | ![Alert](images/CloudwatchLog_Lambda.png) |
 
 ### **4. Code Snippets**
 #### **Lambda Pythong Code** (`scripts/LambdaPythonAlert.py`):
