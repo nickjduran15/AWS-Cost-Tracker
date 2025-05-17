@@ -1,5 +1,5 @@
 # 🔔 AWS Cost Tracker: Real-Time Budget Alerts  
-*Automated cost monitoring with AWS Budgets, Lambda, and SNS*  
+*Automated cost monitoring with AWS Budgets, Lambda, SNS, and CloudWatch*  
 
 [![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com) 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://python.org)
