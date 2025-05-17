@@ -6,7 +6,9 @@
 
 ## 🧠 Objectives
 ✅ Cost Visibility: Monitor AWS spend in real-time
+
 ✅ Automated Alerts: Trigger notifications at 80%/100% thresholds
+
 ✅ Cross-Service Integration: Connect Budgets → Lambda → SNS
 
 ## 🛠️ Technologies Used
@@ -31,30 +33,26 @@
 | Lambda Email | ![Alert](images/RecoveryEmail.png) |
 
 ### **4. Code Snippets**
-#### **User Data Script** (`scripts/install_httpd.sh`):
+#### **Lambda Code (Python)** (`scripts/LambdaPythonAlert.py`):
 ```bash
-#!/bin/bash
-# Install Apache and stress tool
-sudo yum update -y
-sudo yum install -y httpd stress
-sudo systemctl enable --now httpd
-echo "<h1>Auto-Healing Lab $(hostname -f)</h1>" | sudo tee /var/www/html/index.html
-```
+import json
+import boto3
 
-#### **Stress CPU** (`scripts/stress_cpu.sh`):
-```bash
-# SSH into instance (or use SSM)
-sudo amazon-linux-extras install epel -y
-sudo yum install stress -y
-stress --cpu 2 --timeout 300  # Simulate 100% CPU for 5 mins
+def lambda_handler(event, context):
+    sns = boto3.client('sns')
+    alert = f"""
+    🚨 AWS BUDGET ALERT 🚨
+    {json.dumps(event, indent=2)}
+    """
+    sns.publish(
+        TopicArn='arn:aws:sns:us-east-1:726648044823:budget-alert-topic',
+        Message=alert,
+        Subject='AWS Budget Alert!'
+    )
+    return {'statusCode': 200}
 ```
-
-## 💡 Resume Bullets
-**Entry-Level**: “Configured cost monitoring with AWS Budgets and alerting via SNS”  
-**Mid-Level**: “Implemented automated cost tracking alerts with Lambda”  
-**Advanced**: “Engineered real-time cost control system using AWS Budget triggers and Lambda”
 
 ## 🚀 How to Deploy
 ```bash
 # Clone repo
-git clone https://github.com/trucle9100/AWS-autohealing-project.git
+git clone https://github.com/nickjduran15/AWS-Cost-Tracker.git
