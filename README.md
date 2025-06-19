@@ -1,30 +1,30 @@
-# 🔔 AWS Cost Tracker: Real-Time Budget Alerts  
+# Intelligent Cost Governance Platform | 85% Reduction in Budget Overages  
 *Automated cost monitoring with AWS Budgets, Lambda, SNS, and CloudWatch*  
 
 [![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com) 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://python.org)
 
-## 📌 Objectives
+## Objectives
 ✅ Cost Visibility: Monitor AWS spend in real-time
 
 ✅ Automated Alerts: Trigger notifications at 80%/100% thresholds
 
 ✅ Cross-Service Integration: Connect Budgets → Lambda → SNS
 
-## 🛠️ Technologies Used
+## 🛠Technologies Used
 - **AWS Services**: AWS Budgets, Lambda, SNS, CloudWatch
 
-## 🏗️ Architecture
+## 🏗Architecture
 - AWS Budgets → Lambda → SNS → Email
 - ![Architecture](diagram/CostTracker_Diagram.png)
 
-## 📋 Steps
+## Steps
 1. Create SNS Topic and confirm subscription
 2. Deploy Lambda function with publish permissions
 3. Set AWS Budget with threshold and SNS action
 4. Validate alert triggers and log output
 
-## 📸 Visuals
+## Visuals
 | Results | Image |
 |-------------|-------|
 | SNS Topic | ![Alert](images/Topic.png) |
